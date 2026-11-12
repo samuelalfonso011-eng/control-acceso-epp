@@ -3,8 +3,7 @@
 Contrato entre el entrenamiento (Colab) y el frontend. **Modelo vigente: detección por CABEZAS**
 (`public/model_heads/`, YOLOv8n a 416 px, dataset `cabezas_3_datasets`: 3 datasets de Roboflow Universe).
 Reemplaza al modelo anterior de ocupantes completos (`rider_*`, 5 clases), que veía "moto + persona" como
-un solo bulto y fallaba con 2+ ocupantes o con personas sin moto. Ver `ORDEN_CABEZAS.md`.
-
+un solo bulto y fallaba con 2+ ocupantes o con personas sin moto.
 ## 1. Diccionario de clases (orden exacto de classes.json)
 
 | ID | Nombre      | Rol de negocio                  | Color   |
