@@ -1,0 +1,55 @@
+# --- Variables de entorno y secretos ---
+.env
+.env.*
+!.env.example
+
+# --- Dependencias y compilación ---
+node_modules/
+dist/
+build/
+.next/
+.vercel/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generado en cada build por el plugin copy-tfjs-wasm (vite.config.js)
+public/tfjs-wasm/
+
+# --- Certificados y claves ---
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# --- Dumps de bases de datos ---
+*.sql
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Logs ---
+*.log
+logs/
+npm-debug.log*
+
+# --- Pesos de entrenamiento, exports y respaldos (pesados; no deben publicarse) ---
+*.pt
+*.onnx
+*.zip
+model_backups/
+# Modelo anterior (rider_*): la app solo carga public/model_heads/
+public/model/
+
+# --- Configuración local / editor / SO ---
+.claude/
+.playwright-mcp/
+.vscode/
+.idea/
+*.local
+.DS_Store
+Thumbs.db
+desktop.ini
+tmp/

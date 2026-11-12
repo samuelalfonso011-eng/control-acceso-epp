@@ -1,0 +1,13 @@
+{
+  "imgsz": 416,
+  "input": "NHWC [1,416,416,3], float32, RGB, 0..1",
+  "output": "[1, 6, 3549]",
+  "box_scale": "pixels_0_416",
+  "model": "yolov8n",
+  "dataset": "cabezas_3_datasets",
+  "thresholds": { "helmet": 0.5, "noHelmet": 0.3 },
+  "classes": {
+    "0": "con_casco",
+    "1": "sin_casco"
+  }
+}
